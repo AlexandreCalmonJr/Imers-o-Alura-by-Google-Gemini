@@ -42,17 +42,3 @@ Imagine um duelo onde em vez de invocar um Dragão Negro, você invoca um Dragã
 4. **Abra seu navegador:** Acesse http://localhost:3000/ (ou a porta que você configurou)
 
 **Vamos duelar?** ⚔️
-
-**#YuGiOh #Programação #JavaScript #HTML #CSS #Diversão**
-
-**[Adicione aqui tags relevantes para o seu projeto]**
-
-**Observações:**
-
-* **Adapte o README:** Substitua as informações entre colchetes pelas informações do seu projeto.
-* **Seja criativo:** Use emojis, GIFs e imagens para deixar o README mais divertido e atrativo.
-* **Mantenha o README atualizado:** À medida que você desenvolve o jogo, atualize o README para refletir as mudanças.
-
-**Com esse README descontraído, você vai atrair mais pessoas para o seu projeto e deixar todo mundo com vontade de jogar!**
-
-**Gostaria de adicionar mais alguma coisa ao README?**
