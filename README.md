@@ -1,4 +1,4 @@
-## **README.md Descontraído para o Seu Projeto Yu-Gi-Oh! de Programação**
+## Projeto Yu-Gi-Oh! de Programação**
 
 ### **Yu-Gi-Oh!? Mas com código! **
 
