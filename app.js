@@ -6,7 +6,7 @@ function pesquisar() {
 
     // se campoPesquisa for uma string sem nada
     if (!campoPesquisa) {
-        section.innerHTML = "<p>Nada foi encontrado. Você precisa digitar o nome de um atleta ou esporte</p>"
+        section.innerHTML = "<p>Nada foi encontrado. Você precisa digitar o nome ou tipo de carta.</p>"
         return 
     }
 
@@ -14,25 +14,29 @@ function pesquisar() {
 
     // Inicializa uma string vazia para armazenar os resultados
     let resultados = "";
-    let nome = ""; 
+    let titulo = "";
     let descricao = "";
     let tipo = "";
+    let link = "";
 
     // Itera sobre cada dado da lista de dados
-    for (let cartasYuGiOh of cartasYuGiOh) {
-        nome = cartasYuGiOh.nome.toLowerCase()
-        descricao = cartasYuGiOh.descricao.toLowerCase()
-        tags = cartasYuGiOh.tipo.toLowerCase()
-        // se nome includes campoPesquisa
-        if (nome.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tipo.includes(campoPesquisa)) {
+    for (let dado of cartasYuGiOh) {
+        titulo = dado.nome.toLowerCase()
+        descricao = dado.descricao.toLowerCase()
+        tipo = dado.tipo.toLowerCase()
+        link = dado.link.toLowerCase()
+
+        // se titulo includes campoPesquisa
+        if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tipo.includes(campoPesquisa) || link.includes(campoPesquisa)) {
             // cria um novo elemento
             resultados += `
             <div class="item-resultado">
                 <h2>
-                    <a href="#" target="_blank">${cartasYuGiOh.nome}</a>
+                    <a href=${dado.link} target="_blank">${dado.nome}</a>
+                    <p class="descricao-meta">${dado.tipo}</p>
                 </h2>
-                <p class="descricao-meta">${cartasYuGiOh.descricao}</p>
-                <a href=${cartasYuGiOh.tipo} target="_blank">Mais informações</a>
+                <p class="descricao-meta">${dado.descricao}</p>
+                <a href=${dado.link} target="_blank">Sobre a Carta</a>
             </div>
         `;
         }
