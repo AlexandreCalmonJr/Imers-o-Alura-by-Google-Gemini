@@ -1,58 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="config.css" rel="stylesheet">
-    <title>Imersão Gemini Alura</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CartasGames</title>
 </head>
 
 <body>
     <header>
-        <h1>Gemini Alura</h1>
+        <h1>Yu-Gi-Oh Program Linguagem</h1>
     </header>
     <main>
         <section>
-            <input type="text" placeholder="Digite o nome do arquivo">
-            <button>Pesquisar</button>
+            <input type="text" placeholder="Digite o nome da carta">
+            <button onclick="pesquisar()">Pesquisar</button>
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Dart</a>
-                </h2>
-                <p class="descricao-meta">
-                    Dart é uma linguagem de programação versátil e moderna, criada pela Google. Ela é utilizada principalmente para o desenvolvimento de aplicações móveis com o framework Flutter, mas também pode ser usada para criar aplicações web e de servidor.
-                </p>
-                <a href="https://flutter.dev/" target="_blank">Mais informações</a> 
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">JavaScript</a>
-                </h2>
-                <p class="descricao-meta">
-                    JavaScript é uma linguagem de programação interpretada, cliente-side, utilizada para criar interatividade em páginas web.
-                </p>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">Mais informações</a> 
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Python</a>
-                </h2>
-                <p class="descricao-meta">
-                    Python é uma linguagem de programação de alto nível, interpretada e de propósito geral. É conhecida por sua sintaxe clara e legível.
-                </p>
-                <a href="https://www.python.org/" target="_blank">Mais informações</a> 
-            </div>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
     </main>
     <footer>
-        <p>2024 - Gemini Alura. Todos os direitos reservados</p>
-        <p>Entre em contato pelo email: calmontech@calmontech.com.br</p>
+        <p>2024 - Calmon Games. Todos os direitos reservados</p>
+        <p>Entre em contato pelo email: calmongames@gmail.com.br</p>
     </footer>
     <script src="dados.js"></script>
     <script src="app.js"></script>

@@ -1,18 +1,16 @@
-let dados = [
-    {
-        titulo: "Dart",
-        descricao: "Dart é uma linguagem de programação versátil e moderna...",
-        link: "https://flutter.dev/"
-    },
-    {
-        titulo: "Python",
-        descricao: "Python é uma linguagem de programação de alto nível, conhecida por sua sintaxe clara e legível. É amplamente utilizada em diversas áreas, como ciência de dados, machine learning e desenvolvimento web.",
-        link: "https://www.python.org/"
-    },
+let cartasYuGiOh = [
+    // Monstros
+    { nome: "Dragão JavaScript", tipo: "Monstro", descricao: "Invoca uma função para infligir dano ao oponente." },
+    { nome: "Mago Python", tipo: "Monstro", descricao: "Cria uma lista de serpentes para atacar em massa." },
+    { nome: "Guerreiro C++", tipo: "Monstro", descricao: "Aumenta o ataque com ponteiros." },
 
-    {
-        titulo: "JavaScript",
-        descricao: "JavaScript é uma linguagem de programação interpretada, principalmente utilizada para criar interatividade em páginas web. É a linguagem padrão para desenvolvimento front-end e também pode ser usada no back-end com Node.js.",
-        link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
-    }
+    // Magias
+    { nome: "Encantamento Recursivo", tipo: "Magia", descricao: "Invoca cópias de si mesma." },
+    { nome: "Butim da Biblioteca", tipo: "Magia", descricao: "Adiciona uma carta aleatória à mão." },
+    { nome: "Depuração", tipo: "Magia", descricao: "Revele a mão do oponente e escolha uma carta para banir." },
+
+    // Armadilhas
+    { nome: "Erro 404", tipo: "Armadilha", descricao: "Nega o efeito de qualquer carta do oponente." },
+    { nome: "Overflow", tipo: "Armadilha", descricao: "Destrói um monstro com ataque superior a um determinado valor." },
+    { nome: "Underflow", tipo: "Armadilha", descricao: "Inflige dano ao oponente se o seu deck estiver vazio." }
 ];
